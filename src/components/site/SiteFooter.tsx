@@ -1,3 +1,5 @@
+import logo from "@/assets/logo-roozengaarde.png";
+
 const cols = [
   { h: "Shop",                 items: ["Fresh Cut","Tulips","Daffodils","Peonies","Lilies","Bulbs","Gift Cards"] },
   { h: "Subscriptions & Weddings", items: ["Bloom of the Month Club","Bulbs for Brides","Corporate Gifting","Wholesale"] },
