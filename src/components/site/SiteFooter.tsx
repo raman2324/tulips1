@@ -1,3 +1,5 @@
+import logo from "@/assets/logo-roozengaarde.png";
+
 const cols = [
   { h: "Shop",                 items: ["Fresh Cut","Tulips","Daffodils","Peonies","Lilies","Bulbs","Gift Cards"] },
   { h: "Subscriptions & Weddings", items: ["Bloom of the Month Club","Bulbs for Brides","Corporate Gifting","Wholesale"] },
@@ -13,9 +15,14 @@ export function SiteFooter() {
         <div className="grid lg:grid-cols-12 gap-12">
           {/* Brand column */}
           <div className="lg:col-span-4">
-            <div className="flex items-baseline gap-2">
-              <span className="font-display text-3xl font-medium text-cream-50">tulips</span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-cream-50/70">Roozengaarde</span>
+            <div className="inline-flex items-center rounded-2xl bg-cream-50 p-3 shadow-soft">
+              <img
+                src={logo}
+                alt="Tulips.com — Roozengaarde Flowers & Bulbs"
+                className="h-16 w-auto object-contain"
+                width={240}
+                height={140}
+              />
             </div>
             <p className="mt-5 text-cream-50/80 text-[15px] leading-relaxed max-w-sm">
               Family-grown in the Skagit Valley since 1955. Cut Tuesday in Mount Vernon, on your
