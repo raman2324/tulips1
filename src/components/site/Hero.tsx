@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="relative isolate overflow-hidden">
       {/* Image */}
-      <div className="relative h-[68vh] min-h-[560px] md:h-[75vh] w-full">
+      <div className="relative h-[78vh] min-h-[640px] md:h-[75vh] w-full">
         <img
           src={heroImg}
           alt="Roozengaarde tulip fields stretching to the Cascade mountains in the Skagit Valley"
@@ -19,8 +19,8 @@ export function Hero() {
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero-veil)" }} aria-hidden />
 
         {/* Content */}
-        <div className="relative z-10 container-page h-full flex flex-col justify-end pb-16 md:pb-24 on-dark">
-          <p className="eyebrow text-cream-50/90 mb-5 reveal">From the Skagit Valley · Spring 2026</p>
+        <div className="relative z-10 container-page h-full flex flex-col justify-end pt-24 pb-12 md:pb-24 on-dark">
+          <p className="eyebrow text-cream-50 mb-4 md:mb-5 reveal drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]">From the Skagit Valley · Spring 2026</p>
           <h1 className="display-xl text-cream-50 max-w-[14ch] reveal" style={{ animationDelay: ".05s" }}>
             Some moments<br />
             deserve flowers.<br />
