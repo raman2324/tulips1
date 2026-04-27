@@ -1,6 +1,7 @@
 import { Phone, Search, ShoppingBag, User } from "lucide-react";
 import { FlowerButton } from "./FlowerButton";
 import { useEffect, useState } from "react";
+import logo from "@/assets/logo-roozengaarde.png";
 
 const nav = [
   { label: "Shop", href: "#shop" },
@@ -39,11 +40,14 @@ export function SiteHeader() {
 
       <div className="container-page flex h-[72px] items-center gap-6">
         {/* Logo */}
-        <a href="/" className="flex items-baseline gap-2 shrink-0" aria-label="Tulips.com — Roozengaarde">
-          <span className="font-display text-[28px] font-medium tracking-tight text-anchor">tulips</span>
-          <span className="hidden sm:inline-block text-[10px] uppercase tracking-[0.2em] text-ink-500">
-            Roozengaarde
-          </span>
+        <a href="/" className="flex items-center shrink-0" aria-label="Tulips.com — Roozengaarde">
+          <img
+            src={logo}
+            alt="Tulips.com — Roozengaarde Flowers & Bulbs"
+            className="h-14 md:h-16 w-auto object-contain"
+            width={240}
+            height={140}
+          />
         </a>
 
         {/* Nav */}
